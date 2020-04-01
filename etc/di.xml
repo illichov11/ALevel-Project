@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="ALevel\Project\Api\Data\QuickOrderInterface"
+                type="ALevel\Project\Model\QuickOrder" />
+    <preference for="ALevel\Project\Api\Model\QuickOrderRepositoryInterface"
+                type="ALevel\Project\Repository\QuickOrderRepository"/>
+    <preference for="ALevel\Project\Api\Data\StatusInterface"
+                type="ALevel\Project\Model\Status"/>
+    <preference for="ALevel\Project\Api\StatusRepositoryInterface"
+                type="ALevel\Project\Repository\StatusRepository"/>
+    <preference for="ALevel\Project\Api\Data\StatusSearchResultInterface"
+                type="Magento\Framework\Api\Search\SearchResult"/>
+    <preference for="ALevel\Project\Api\Data\QuickOrderSearchResultInterface"
+                type="Magento\Framework\Api\Search\SearchResult"/>
+</config>

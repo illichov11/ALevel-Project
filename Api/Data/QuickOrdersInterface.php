@@ -1,10 +1,10 @@
 <?php
 
+
 namespace ALevel\Project\Api\Data;
 
-/**
-* @package ALevel\Project\Api\Data
-*/
+use Magento\Tests\NamingConvention\true\string;
+
 interface QuickOrderInterface
 {
     /**
@@ -16,37 +16,45 @@ interface QuickOrderInterface
      * @param string $name
      * @return QuickOrderInterface
      */
-    public function setName($name);
+    public function setName(string $name);
 
-
-    public function getName(): string;
+    /**
+     * @return string
+     */
+    public function getName();
 
     /**
      * @param string $phone
      * @return QuickOrderInterface
      */
-    public function setPhone($phone);
+    public function setPhone(string $phone);
 
-
-    public function getPhone(): string;
+    /**
+     * @return mixed
+     */
+    public function getPhone();
 
     /**
      * @param string $email
      * @return QuickOrderInterface
      */
-    public function setEmail($email);
+    public function setEmail(string $email);
 
-
-    public function getEmail(): string;
+    /**
+     * @return string
+     */
+    public function getEmail();
 
     /**
      * @param string $sku
      * @return QuickOrderInterface
      */
-    public function setSku($sku);
+    public function setSku(string $sku);
 
-
-    public function getSku(): string;
+    /**
+     * @return string
+     */
+    public function getSku();
 
     /**
      * @param StatusInterface $status
@@ -54,8 +62,10 @@ interface QuickOrderInterface
      */
     public function setStatus(StatusInterface $status);
 
-
-    public function getStatus(): StatusInterface;
+    /**
+     * @return StatusInterface
+     */
+    public function getStatus();
 
     /**
      * @return \DateTimeInterface

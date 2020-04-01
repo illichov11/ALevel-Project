@@ -21,7 +21,7 @@ use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
  */
 class QuickOrders extends AbstractModel implements QuickOrderInterface
 {
-    private $statusRepository;
+
 
     /**
      * @var StatusInterface
@@ -62,11 +62,12 @@ class QuickOrders extends AbstractModel implements QuickOrderInterface
         $this->_init(ResourceModel::class);
     }
 
+
     /**
      * @param string $name
      * @return QuickOrderInterface
      */
-    public function setName(string $name): QuickOrderInterface
+    public function setName($name): QuickOrderInterface
     {
         $this->setData(QuickOrderSchemaInterface::NAME_COL_NAME, $name);
 
@@ -85,7 +86,7 @@ class QuickOrders extends AbstractModel implements QuickOrderInterface
      * @param string $phone
      * @return QuickOrderInterface
      */
-    public function setPhone(string $phone): QuickOrderInterface
+    public function setPhone($phone): QuickOrderInterface
     {
         $this->setData(QuickOrderSchemaInterface::PHONE_COL_NAME, $phone);
 
@@ -104,7 +105,7 @@ class QuickOrders extends AbstractModel implements QuickOrderInterface
      * @param string $email
      * @return QuickOrderInterface
      */
-    public function setEmail(string $email): QuickOrderInterface
+    public function setEmail($email): QuickOrderInterface
     {
         $this->setData(QuickOrderSchemaInterface::EMAIL_COL_NAME, $email);
 

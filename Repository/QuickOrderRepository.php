@@ -4,15 +4,17 @@ namespace ALevel\Project\Repository;
 
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
 
+use Magento\Framework\Data\SearchResultInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Psr\Log\LoggerInterface;
 use ALevel\Project\Api\Data\QuickOrderInterface;
 use ALevel\Project\Api\Data\QuickOrderInterfaceFactory;
-use ALevel\Projet\Api\QuickOrderRepositoryInterface;
+use ALevel\Project\Api\QuickOrderRepositoryInterface;
 use ALevel\Project\Model\ResourceModel\QuickOrder as ResourceModel;
 use ALevel\Project\Model\ResourceModel\QuickOrder\CollectionFactory;
+use Magento\Framework\Api\SearchCriteriaInterface;
 
 /**
  * Class QuickOrderRepository
@@ -76,10 +78,6 @@ class QuickOrderRepository implements QuickOrderRepositoryInterface
         return $model;
     }
 
-    public function getList(SearchCriteriaInterface $searchCriteria): SearchResultInterface
-    {
-        // TODO: Implement getList() method.
-    }
 
     public function save(QuickOrderInterface $quickOrder): QuickOrderRepositoryInterface
     {
@@ -91,6 +89,11 @@ class QuickOrderRepository implements QuickOrderRepositoryInterface
         }
 
         return $this;
+    }
+
+    public function getList(SearchCriteriaInterface $searchCriteria): SearchResultInterface
+    {
+        // TODO: Implement getList() method.
     }
 
 

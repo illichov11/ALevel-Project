@@ -1,6 +1,6 @@
 <?php
 
-namespace ALevel\Projet\Api;
+namespace ALevel\Project\Api;
 
 use ALevel\Project\Api\Data\QuickOrderInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;

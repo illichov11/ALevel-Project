@@ -5,14 +5,17 @@ namespace ALevel\Project\Model;
 use Magento\Framework\Data\Collection\AbstractDb;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Framework\Model\Context;
-use ALevel\Project\Api\Data\QuickOrderInterface;
-use ALevel\Project\Api\Data\StatusInterface;
-use ALevel\Project\Api\Schema\QuickOrderSchemaInterface;
-use ALevel\Project\Model\ResourceModel\QuickOrder as ResourceModel;
 use Magento\Framework\Model\ResourceModel\AbstractResource;
 use Magento\Framework\Registry;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
+
+use ALevel\Project\Api\Data\QuickOrderInterface;
+use ALevel\Project\Api\Data\StatusInterface;
+use ALevel\Project\Api\Schema\QuickOrderSchemaInterface;
+use ALevel\Project\Model\ResourceModel\QuickOrder as ResourceModel;
+
+
 
 
 /**
@@ -21,7 +24,6 @@ use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
  */
 class QuickOrders extends AbstractModel implements QuickOrderInterface
 {
-
 
     /**
      * @var StatusInterface

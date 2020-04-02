@@ -19,10 +19,10 @@ use ALevel\Project\Model\ResourceModel\QuickOrder as ResourceModel;
 
 
 /**
- * Class QuickOrders
+ * Class QuickOrder
  * @package ALevel\Project\Model
  */
-class QuickOrders extends AbstractModel implements QuickOrderInterface
+class QuickOrder extends AbstractModel implements QuickOrderInterface
 {
 
     /**

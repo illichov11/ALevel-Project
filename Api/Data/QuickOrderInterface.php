@@ -3,7 +3,6 @@
 
 namespace ALevel\Project\Api\Data;
 
-use Magento\Tests\NamingConvention\true\string;
 
 interface QuickOrderInterface
 {
